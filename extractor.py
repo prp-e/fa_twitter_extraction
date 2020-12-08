@@ -17,7 +17,7 @@ class Extractor:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--word', required=True, default="Trump")
-    parser.parse_args() 
+    parser = parser.parse_args() 
 
     e = Extractor(parser.word)
     e.extract() 
