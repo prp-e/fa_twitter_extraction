@@ -15,4 +15,9 @@ class Extractor:
         config.run.Search() 
 
 if __name__ == '__main__':
-    print("Working on it!")
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--word', required=True, default="Trump")
+    parser.parse_args() 
+
+    e = Extractor(parser.word)
+    e.extract() 
