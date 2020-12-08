@@ -3,7 +3,7 @@ import twint
 
 class Extractor:
     """This class is the main extractor"""
-    def __init__(keyword):
+    def __init__(self, keyword):
         self.keyword = keyword 
     
     def extract(self):
