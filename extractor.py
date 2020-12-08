@@ -12,7 +12,7 @@ class Extractor:
         config.Search = self.keyword 
         config.Store_json = True 
         config.Limit = 1000 
-        config.run.Search() 
+        twint.run.Search(config)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
